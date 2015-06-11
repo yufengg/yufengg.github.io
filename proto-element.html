@@ -4,7 +4,7 @@
 <dom-module id="proto-element">
 
 <template>  
-  <p> inner dom! </p>
+  <p> <em>{{owner}}'s</em> inner dom! </p>
   <content></content>
 </template>
 
@@ -15,6 +15,7 @@
     // add a callback to the element's prototype
     ready: function() {
       // this.innerHTML = "I'm a proto-element. Check out my prototype!"
+      this.owner = "Yufeng";
     }
   });
 </script>

@@ -1,10 +1,17 @@
 <link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/iron-input/iron-input.html">
 
 <dom-module id="proto-element">
 
   <template>  
     <p> <span>{{ owner }}</span>'s inner dom! </p>
     <p> my property: <span>{{ myproperty }}</span></p>
+    <div>
+        <input is="iron-input" bind-value="{{ owner }}" placeholder="name here">
+    </div>
+    <div>
+        <input is="iron-input" bind-value="{{ myproperty }}" placeholder="myproperty here">
+    </div>
     <content></content>
   </template>
 

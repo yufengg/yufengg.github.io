@@ -3,7 +3,8 @@
 <dom-module id="proto-element">
 
   <template>  
-    <p> <b>{{owner}}</b>'s inner dom! </p>
+    <p> <span>{{ owner }}</span>'s inner dom! </p>
+    <p> my property: <span>{{ myproperty }}</span></p>
     <content></content>
   </template>
 
@@ -16,6 +17,12 @@
         // this.innerHTML = "I'm a proto-element. Check out my prototype!"
         console.log('Polymer ready!');
         this.owner = "Yufeng";
+      },
+      properties: {
+        myproperty: {
+          type: String,
+          value: "default declared property value"
+        }
       }
     });
   </script>

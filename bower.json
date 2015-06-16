@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0",
-    "iron-input": "PolymerElements/iron-input#^1.0.0"
+    "iron-input": "PolymerElements/iron-input#^1.0.0",
+    "firebase-element": "GoogleWebComponents/firebase-element#^1.0.0"
   }
 }
